@@ -34,6 +34,7 @@ INSTALLED_APPS = [
 
     # 3rd party
     'rest_framework',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
@@ -124,9 +125,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
-    ],
     'DEFAULT_AUTHENTICATION_CLASSES': (
             'rest_framework.authentication.BasicAuthentication',
             'rest_framework.authentication.SessionAuthentication',
