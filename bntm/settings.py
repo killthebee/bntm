@@ -29,6 +29,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    #local
+    'nft_token',
+
     # 3rd party
     'rest_framework',
 ]
