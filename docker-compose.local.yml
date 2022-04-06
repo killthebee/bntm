@@ -9,10 +9,6 @@ services:
     volumes:
       - bntm_db:/var/lib/postgresql/data
 
-  redis:
-    image: redis:rc-alpine
-    container_name: bntm_redis
-
   web:
     build:
       context: .
@@ -27,7 +23,6 @@ services:
       - "8000:8000"
     depends_on:
       - db
-      - redis
 
 
 volumes:
