@@ -131,3 +131,9 @@ REST_FRAMEWORK = {
     )
 
 }
+
+INFURIA_NODE = f"https://rinkeby.infura.io/v3/{os.environ.get('INFURA_KEY')}"
+CONTRACT_ADDRESS = "0x92e098deF0CA9577BD50ca61B90b9A46EC1F2040"
+WALLET_PRIVATE_KEY = os.environ.get("WALLET_PRIVATE_KEY")
+WALLET_ADDRESS = os.environ.get("WALLET_ADDRESS")
+GAS = int(os.environ.get("GAS"))
