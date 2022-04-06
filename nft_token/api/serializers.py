@@ -7,7 +7,6 @@ from nft_token.api.services import mint_token
 from bntm.utils import create_hash
 
 
-
 class CreateTokenSerializer(serializers.Serializer):
     owner = serializers.CharField(max_length=50)
     media_url = serializers.CharField(max_length=200, required=False)
