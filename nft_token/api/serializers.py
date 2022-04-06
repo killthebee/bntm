@@ -26,3 +26,10 @@ class CreateTokenSerializer(serializers.Serializer):
             validated_data["owner"], validated_data["media_url"], validated_data["unique_hash"]
         )
         return Token.objects.create(**validated_data)
+
+
+class ListTokenSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Token
+        fields = "__all__"
