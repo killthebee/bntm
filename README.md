@@ -1,4 +1,4 @@
-### D app
+### basic nft token manipulations
 Бэк-энд сервис взаимодействующий с контрактом стандарта ERC-721 в блокчейне Ethereum.
 
 
@@ -23,7 +23,7 @@ docker-compose -f docker-compose.local.yml exec web bash
 ```
 python manage.py migrate
 ```
-После чего, по адрес `http://127.0.0.1:8000/nft_token/api/tokens/<Энд-Поинт>` можно будет обращаться к реализованным
+После чего, по адресу `http://127.0.0.1:8000/nft_token/api/tokens/<Энд-Поинт>` можно будет обращаться к реализованным
 апи ручкам
 
 #### Описание апи эндпоинтов
@@ -32,7 +32,9 @@ python manage.py migrate
 
 ```tokens/create/```
 Создаёт токен
+
 ```tokens/list/```
 Возвращает лист сохранённых в бд токенов
+
 ```tokens/total_supply/```
 Возвращает общее количество токенов, находящихся в сети.
